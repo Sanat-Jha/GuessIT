@@ -1,10 +1,10 @@
-import random
+import random           #importing modules
 import time
 
 import speech_recognition as sr
 
 
-def recognize_speech_from_mic(recognizer, microphone):
+def recognize_speech_from_mic(recognizer, microphone):       #defining function
  
     if not isinstance(recognizer, sr.Recognizer):
         raise TypeError("`recognizer` must be `Recognizer` instance")
@@ -37,7 +37,7 @@ def recognize_speech_from_mic(recognizer, microphone):
     return response
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":        #the further code will only run if the main file is run and not through importing anywhere else
 
     WORDS = ["apple", "banana", "grape", "orange", "mango", "lemon"]
     NUM_GUESSES = 3
